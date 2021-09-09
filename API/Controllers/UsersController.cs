@@ -11,9 +11,9 @@ using Microsoft.Extensions.Logging;
 
 namespace API.Controllers
 {
-    [ApiController]
-    [Route("[controller]")]
-    public class UsersController : Controller
+   [ApiController]
+   [Route("controller")]
+    public class UsersController 
     {
         private readonly DataContext _context;
 
@@ -21,6 +21,8 @@ namespace API.Controllers
         {
             _context = context;
         }
+
+    
 
         [HttpGet]
 
